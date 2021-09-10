@@ -32,6 +32,10 @@
     border: 1px solid rgba(230, 230, 230, 0.8);
 }
 
+.topCard .favorite:hover{
+    cursor: pointer;
+}
+
 .legendCard {
     padding: 25px 20px 0;
     line-height: 1.7rem;

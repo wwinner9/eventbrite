@@ -27,8 +27,8 @@ export default function NavBar(){
                 </div>
             </div>
             <div className="hideUserTools">
-                <li> <a href="#"><IoSearch size={25}/></a></li>
-                <li> <a href="#"><BiUser  size={25}/></a></li> 
+                <li> <a href="#"><IoSearch size={20}/></a></li>
+                <li> <a href="#"><BiUser  size={20}/></a></li> 
             </div>
 
         </div>

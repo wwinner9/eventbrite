@@ -138,6 +138,9 @@ header{
 
 #eventContainer nav { 
     width: 100%;  
+
+    overflow-x: auto;
+    overflow-y: hidden;
     
 }
 
@@ -145,6 +148,8 @@ header{
     display: flex;
     list-style: none; 
     width: 100%; 
+    overflow-x: auto;
+    overflow-y: hidden;
     
 }
 
@@ -157,6 +162,7 @@ header{
     text-align: center;
     font-size: .9rem;
     cursor: pointer;
+    width: 100%;
 }
 
 #eventContainer nav ul li ::before{
@@ -295,9 +301,6 @@ footer nav ul li{
         grid-template-columns: 1fr 1fr;
     }
 
-    .legend .topLetter{ 
-    }
-
     #firstLi{
         display: none;
     }
@@ -327,6 +330,13 @@ footer nav ul li{
         height: 30rem;  
     }
 
+}
+
+@media screen and (max-width:960px) { 
+    #eventContainer nav ul li {
+        font-size: .9rem;
+        padding-right: 1%;
+    }
 }
 
 
