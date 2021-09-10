@@ -136,20 +136,14 @@ header{
     color: #3659E3;
 }
 
-#eventContainer nav { 
-    width: 100%;  
-
-    overflow-x: auto;
-    overflow-y: hidden;
+#eventContainer nav {   
     
 }
 
 #eventContainer nav ul {
     display: flex;
     list-style: none; 
-    width: 100%; 
-    overflow-x: auto;
-    overflow-y: hidden;
+    width: 100%;  
     
 }
 
@@ -161,8 +155,7 @@ header{
     position: relative; 
     text-align: center;
     font-size: .9rem;
-    cursor: pointer;
-    width: 100%;
+    cursor: pointer; 
 }
 
 #eventContainer nav ul li ::before{
