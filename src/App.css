@@ -1,38 +1,346 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Reem Kufi',sans-serif
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,input,button{
+    font-family: 'Reem Kufi',sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+    margin: 0 0 7px;
+    padding: 0;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#banner{
+    background: #000 no-repeat url('https://c.pxhere.com/photos/5a/91/concert_festival_orange_flame_hands_up-1410537.jpg!d');
+    background-size: 100% 130% ;
+    width: 100%;
+    height: 35rem; 
 }
 
-.App-link {
-  color: #61dafb;
+#blackS{
+    background-color: rgba(0, 0, 0, 0.308);
+    height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#banner .legend{ 
+    display: block; 
+    height: 28rem; 
+    width: 10rem; 
+    color: white;
+    font-family: 'Oswald',sans-serif;   
+    padding: 90px 0 0 6%;   
+
+}
+
+#banner .legend .topLetter{
+    height: 50%; 
+    display: flex; 
+    padding-left: 60px;
+}
+
+#banner .legend .topLetter h1{
+    font-size: 10rem;
+    font-family: 'Oswald',sans-serif;
+}
+
+#banner .legend .topLetter h2{
+    margin-top: 60px;
+    font-size: 5rem;
+    position: relative;
+
+}
+
+#banner .legend .topLetter h2::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    height: 14px;
+    width: 100%;
+    background-color: white;    
+}
+
+#banner .legend .bottomLetter{ 
+    display: flex;  
+}
+
+#banner .legend .bottomLetter h1{
+    margin-top:-40px; 
+    font-size: 5rem;
+    position: relative;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+#banner .legend .bottomLetter h2{
+    margin-top: -68px;
+    font-size: 10rem;
+    position: relative;
+
+}
+
+.btnDivv{ 
+    bottom: 12rem;
+    left: 9.5rem;
+}
+
+#btnInfo{
+    height: 2.5rem;
+    width: 10rem; 
+    background-color: #F05537;
+    outline: none;
+    border:none ;
+    border-radius: 4px;
+    color: white;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+    transition: .7s background;
+}
+
+#btnInfo:hover{
+    background-color: transparent;    
+    border: 2px solid #F05537;
+
+}
+
+#eventContainer{
+    margin: 3rem 10%; 
+}
+
+#eventContainer .top{
+    display: flex;
+    margin-bottom: 20px; 
+}
+
+#eventContainer .top h1, .top p{
+    font-size: 2rem;
+    padding-right: 10px; 
+    
+}
+
+#eventContainer .top p{
+    margin-top: 10px;
+}
+
+#eventContainer .top :last-child{
+    color: #3659E3;
+}
+
+#eventContainer nav { 
+    width: 100%;  
+    
+}
+
+#eventContainer nav ul {
+    display: flex;
+    list-style: none; 
+    width: 100%; 
+    
+}
+
+
+
+#eventContainer nav ul li {
+    margin-right: 2rem;
+    color: rgb(122, 122, 122);
+    position: relative; 
+    text-align: center;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+#eventContainer nav ul li ::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #3659E3; 
+    bottom: -8px; 
+    transition: .5s all;
+}
+
+#eventContainer nav ul li:hover ::before{ 
+    width: 100%; 
+}
+
+
+#cardContainer{
+    display: grid;
+    width: 100%;
+    margin: 60px 0 0px; 
+}
+
+#cardContainer h2{
+    margin-bottom: 50px;
+}
+
+#cardContainer ul, .moreCardContent ul{
+    width: 100%;  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 50px; 
+}
+
+#cardContainer ul li , #moreEvents li{
+    width: 100%;
+    height: 26rem; 
+    list-style:none;
+    box-shadow: 1px 1px 40px 1px #ececec;
+    transition: .5s all;
+}
+
+#cardContainer ul li:hover, #moreEvents li:hover{
+    box-shadow: 1px 1px 40px 1px #b4b4b4;
+}
+
+#moreEvents{
+    width: 100%; 
+}
+
+.moreCardContent{
+    padding: 2rem 10%;
+    border-top: 10px solid #F8F7FA ;
+}
+
+.moreCardContent h2{
+    margin: 20px 0 40px;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;  
+    margin-bottom: 70px;
+}
+
+#btnMore{
+    width: 25rem;
+    height: 2.8rem;  
+    background-color: transparent;
+    border-radius: 5px;
+    border:2px solid #a4a3ad;
+    color: #39364F;
+}
+
+
+footer{
+    width: 100%; 
+    height: 4rem;
+    background-color: #1E0A3C;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    color:#eeedf2 ;
+    font-size: 12px;
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;  
+}
+
+footer a{
+    color: #eeedf2;
+    position: relative;
+    font-weight: 100;
+}
+
+footer a ::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    top: 1px;
+
+}
+
+footer a :hover{
+    color: #304fc9;
+}
+
+footer nav ul li{
+    padding-right: 10px;
+}
+
+.usa{
+    display: flex; 
+    padding-top: 8px;
+}
+
+.usa p{
+    padding-right: 10px;
+}
+ 
+
+@media screen and (max-width:1230px) { 
+    #cardContainer ul, .moreCardContent ul{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+}
+
+@media screen and (max-width:1000px) { 
+    #cardContainer ul, .moreCardContent ul{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .legend .topLetter{ 
+    }
+
+    #firstLi{
+        display: none;
+    }
+
+    #banner .legend .topLetter h1 , #banner .legend .bottomLetter h2{
+        font-size: 7rem; 
+    }
+
+    #banner .legend .topLetter h2 , #banner .legend .bottomLetter h1{
+        font-size: 3rem; 
+    }
+
+    #banner .legend .topLetter h2::before{ 
+        top: 6px;
+        height: 6px;  
+    }
+
+    #banner .legend .topLetter h2{ 
+        margin-top: 50px; 
+    }
+
+    #banner .legend .bottomLetter{
+        margin-top: -31px;
+    }
+
+    #banner .legend {
+        height: 30rem;  
+    }
+
+}
+
+
+@media screen and (max-width:730px) { 
+    #cardContainer ul, .moreCardContent ul{
+        grid-template-columns: 1fr;
+
+    }
+    #cardContainer ul li , #moreEvents li{ 
+        height: 18rem; 
+    }
+    .response{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }

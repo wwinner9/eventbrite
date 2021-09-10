@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+
+.cardContent{
+    width: 100%;
+    height: 26rem;
+    font-family: 'Nunito Sans',sans-serif;
+}
+
+.topCard{ 
+    width: 100%;
+    height: 35%;
+    background-color: chocolate;
+    position: relative;
+    
+}
+
+.topCard img{
+    width: 100%;
+    height: 100%; 
+}
+
+.topCard .favorite{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 2.7rem;
+    width: 2.7rem;
+    text-align: center;
+    line-height: 50px;
+    bottom:-20px;
+    right: 15px;
+    border: 1px solid rgba(230, 230, 230, 0.8);
+}
+
+.legendCard {
+    padding: 25px 20px 0;
+    line-height: 1.7rem;
+}
+
+.legendCard #eventTittle{ 
+    font-size:1.2rem ;
+    text-decoration: none;
+    color: #39364F;
+    font-weight: 600;
+    
+}
+
+.legendCard #eventOwner,.followers{
+    color: #39364F;
+    font-size: .85rem;
+}
+
+
+.legendCard p:first-of-type { 
+    color: #F05537;
+    font-weight: 600; 
+}
+
+.legendCard #eventType,#eventPay{
+    color:#6f7287;
+    font-weight: 100;
+    font-size: .9rem;
+    
+}
+

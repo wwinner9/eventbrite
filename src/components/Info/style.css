@@ -1,0 +1,17 @@
+#info{
+    width: 80%; 
+    border-radius: 5px;
+    box-shadow: .4px 1px 5px rgb(212, 212, 212);
+    margin: 20px auto; 
+    border-left:3px solid #F05537 ;
+    padding: 10px 30px;
+}
+
+#info h3{
+    font-size: 1.1rem;
+    color: rgb(59, 59, 59);
+}
+#info p{    
+    font-size: .9rem;
+    color:rgb(87, 87, 87);
+}
